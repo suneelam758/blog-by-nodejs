@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin-login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(151, 230, 127);
+        }
+        .formm{
+            height: 20%;
+            width: 30%;
+            padding-left: 40%;
+            padding-top: 10%;
+
+
+        }
+       
+        img{
+            padding-left: 10%;
+            padding-bottom: 15%;
+
+        }
+        span{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(5, 73, 5);
+        }
+        input{
+            color: rgb(5, 2, 15);
+            border: 2px solid rgb(8, 73, 73);
+            height: 30px;
+            transition-duration: 1s;
+            background-color:transparent;
+        }
+        input:hover{
+            box-shadow: 0 0 10px rgb(3, 75, 18), 0 0 40px rgb(4, 87, 52), 0 0 80px rgb(6, 65, 18);
+        }
+       button{ position: relative;
+                display: inline-block;
+                padding: 5px 10px;
+                color: rgb(3, 75, 18);
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                text-decoration: none;
+                font-size: 24px;
+                overflow: hidden;
+                transition: 0.2s;
+            }
+            button:hover{
+                color: white;
+                background: rgb(3, 75, 18);
+                box-shadow: 0 0 10px rgb(3, 75, 18), 0 0 40px rgb(3, 75, 18), 0 0 80px rgb(3, 75, 18);
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="formm">
+        <img src="Cofee.png" height="100" width="100">
+        <div class="forrm">
+            <form action="/log" method="POST">
+                <span>Name</span><br><br>
+                <input type="text" placeholder="John Doe" name="i1" required><br><br><br>
+                <span>Password</span><br><br>
+                <input type="text" placeholder="confidential" name="i2" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

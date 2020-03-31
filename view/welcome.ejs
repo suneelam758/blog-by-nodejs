@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Fondamento|Lemonada|Noto+Sans|PT+Serif|Tomorrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background:rgb(192, 171, 240)
+        }
+       .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    background-color: black;
+  }
+  #z{
+      color: white;
+      font-size: 16px;
+  }
+  #z:hover{
+      color: rgb(243, 9, 9);
+  }
+  h1{
+      padding-left: 5%;
+  }
+  h3{
+      padding-left: 3%;
+  }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">SUNEELAM</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login" id="z">DASHBOARD</a></li>
+          <li><a href="#" id="z">CONTACT</a></li>
+          <li><a href="#" id="z">ABOUT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <table>
+    <% data.forEach(function(x)
+    {
+        %>
+        <tr><h1><%=x.title %></h1>
+            <h3><%=x.data %></h3><br>
+        </tr>
+    <%
+    })%>
+</table>
+</body>
+</html>
+
